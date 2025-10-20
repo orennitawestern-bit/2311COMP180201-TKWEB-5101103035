@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".dropdown-item").hide();
+            $(".dropdown-toggle").click(function(){
+                $(".dropdown-item").slideToggle();
+            });
+        })
+    </script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: relative; ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html"><img src="/—Pngtree—happy halloween logo design royalty_17125785.png" alt="logo" style="height: 50px; width: 50px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="./gioithieu.html">Giới thiệu</a>
+        <div class="nav-item dropdown" style="position: absolute; margin-left: 90px; ">
+            <div class="dropdown-toggle" style="padding-top: 8px;">
+              Chủ đề Halloween
+            </div>
+            <div style="display: block;background-color: rgb(252, 251, 251);">
+              <a class="dropdown-item" href="./chudehalloween/trangphuc.html">Trang phục Halloween</a>
+              <a class="dropdown-item" href="./chudehalloween/trangtri.html">Trang trí Halloween</a>
+              <a class="dropdown-item" href="./chudehalloween/monan.html">Món ăn Halloween</a>
+            </div>
+      </div>
+      <a class="nav-link active" aria-current="page" href="./hinhanh.html" style="margin-left: 170px;">Bộ sưu tập hình ảnh Halloween</a>
+        <a class="nav-link active" aria-current="page" href="./dangki.html">Đăng ký tham gia</a>
+        <a class="nav-link active" aria-current="page" href="./lienhe.html">Liên hệ</a>
+    </div>
+  </div>
+</nav>
+<div style="align-items: center; display: flex; flex-direction: column;">
+    <h1 style="color: white; margin-top: 30px;">Giới thiệu về Halloween</h1>
+    <p style="color: white; margin-top: 20px; max-width: 600px; text-align: center;">
+        Halloween, còn được gọi là Lễ hội Ma quỷ, là một ngày lễ truyền thống được tổ chức vào đêm 31 tháng 10 hàng năm. 
+        Nguồn gốc của Halloween bắt nguồn từ lễ hội cổ xưa của người Celt gọi là Samhain, khi người ta tin rằng ranh giới giữa thế giới sống và thế giới chết trở nên mờ nhạt. 
+        Trong dịp này, người ta thường mặc trang phục ma quái, trang trí nhà cửa với bí ngô và đèn lồng, và tham gia vào các hoạt động như "trick-or-treating" (xin kẹo hoặc bị ghẹo).
+    </p>
+    <img src="./Iconcreme-Halloween-Twitter.512.png" style="height: 200px; width: 200px;">
+</div>
+</body>
+</html>

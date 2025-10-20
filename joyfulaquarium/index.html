@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Hồ cá vui nhộn</title>
+</head>
+<body style="background-color: rgb(82, 106, 172);">
+    <nav>
+        <button style="background-color: black; color: white; border-radius: 10%; float:right" onclick="changeBackgroundColor()">Đổi màu nền</button>
+    </nav>
+    <script>
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = document.body.style.backgroundColor == 'rgb(82, 106, 172)' ? 'rgb(150, 200, 250)' : 'rgb(82, 106, 172)';
+        }
+    </script>
+    <div id="content">
+        <div class="shark"><img src="./shark.png" width="auto" height="auto"></div>
+        <div class="turtle"><img src="./turtle.png" width="auto" height="auto"></div>
+        <div class="diver"><img src="./diver1.png" width="auto" height="auto"></div>
+        <div class="bubble"><img src="./faintSchool.png" width="auto" height="auto"></div>
+        <div class="bubble1"><img src="./faintSchool.png" width="auto" height="auto"></div>
+        <div class="diver2"><img src="./diver2.png" width="auto" height="auto"></div>
+        <div class="diver3"><img src="./diver3.png" width="auto" height="auto"></div>
+        <div class="goldfish"><img src="./goldFishSchool.png" width="auto" height="auto"></div>
+    </div>
+
+</body>
+</html>

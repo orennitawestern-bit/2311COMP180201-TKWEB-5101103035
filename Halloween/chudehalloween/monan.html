@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".dropdown-item").hide();
+            $(".dropdown-toggle").click(function(){
+                $(".dropdown-item").slideToggle();
+            });
+        })
+    </script>
+    <style>
+    
+        @keyframes shaking {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+        img {
+            animation: shaking 0.5s;
+            animation-iteration-count: initial;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: relative; ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/index.html"><img src="/—Pngtree—happy halloween logo design royalty_17125785.png" alt="logo" style="height: 50px; width: 50px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="/gioithieu.html">Giới thiệu</a>
+        <div class="nav-item dropdown" style="position: absolute; margin-left: 90px; ">
+            <div class="dropdown-toggle" style="padding-top: 8px;">
+              Chủ đề Halloween
+            </div>
+            <div style="display: block;background-color: rgb(252, 251, 251);">
+              <a class="dropdown-item" href="./trangphuc.html">Trang phục Halloween</a>
+              <a class="dropdown-item" href="./trangtri.html">Trang trí Halloween</a>
+              <a class="dropdown-item" href="./monan.html">Món ăn Halloween</a>
+            </div>
+      </div>
+      <a class="nav-link active" aria-current="page" href="/hinhanh.html" style="margin-left: 170px;">Bộ sưu tập hình ảnh Halloween</a>
+        <a class="nav-link active" aria-current="page" href="/dangki.html">Đăng ký tham gia</a>
+        <a class="nav-link active" aria-current="page" href="/lienhe.html">Liên hệ</a>
+    </div>
+  </div>
+</nav>
+<div class="home">
+    <div style="display: flex; justify-content: space-around;">
+       <div class="col-sm-3 card" style="width: 18rem; margin-top: 100px;">
+        <div class="card-header">Súp bí ngô</div>
+        <div class="card-body">
+            <img src="/23-768x512.png" style="width: 250px; height: 300px;">
+        </div>
+        <div class="card-footer">
+            Giá: 50.000 VNĐ    
+        </div>
+       </div>
+       <div class="col-sm-3 card" style="width: 18rem; margin-top: 100px;">
+        <div class="card-header">Kẹo Halloween</div>
+        <div class="card-body">
+            <img src="/df4f976a-412b-4f81-a443-31045b13b9d8-7cc6fb468a26f1baa645d6300ba9d453.jpg" style="width: 250px; height: 300px;">
+        </div>
+        <div class="card-footer">
+            Giá: 20.000 VNĐ    
+        </div>
+       </div>
+       <div class="col-sm-3 card" style="width: 18rem; margin-top: 100px;">
+        <div class="card-header">Bánh quy Halloween</div>
+        <div class="card-body">
+            <img src="/3b3f0e1b-6908-4382-9202-b0069750ff73.png" style="width: 250px; height: 300px;">
+        </div>
+        <div class="card-footer">
+            Giá: 100.000 VNĐ    
+        </div>
+    </div>
+</div>
+</body>
+</html>
